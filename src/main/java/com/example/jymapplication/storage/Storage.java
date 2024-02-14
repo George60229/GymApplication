@@ -14,6 +14,7 @@ import java.util.Map;
 public class Storage {
 
 
+    //add comment
     private final Map<String, Entity> data = new HashMap<>();
 
 
