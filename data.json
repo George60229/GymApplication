@@ -1,0 +1,9 @@
+{
+  "class": "trainer",
+  "firstName": "John",
+  "lastName": "Doe",
+  "isActive": true,
+  "specialization": "first",
+  "userId": 1
+
+}
