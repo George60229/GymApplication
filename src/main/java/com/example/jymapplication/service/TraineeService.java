@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class TraineeService extends UserService {
+public class TraineeService {
     TraineeDao traineeDAO;
 
     @Autowired
@@ -22,9 +22,9 @@ public class TraineeService extends UserService {
         traineeDAO.addTrainee(trainee);
     }
 
-    public void editTrainee(Trainee trainee) {
+    public void editTrainee(Trainee trainee, String key) {
         log.info("Update trainee:" + trainee.toString());
-        traineeDAO.updateTrainee(trainee);
+        traineeDAO.updateTrainee(trainee, key);
     }
 
     public void deleteTrainee(int traineeId) {

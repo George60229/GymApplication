@@ -18,8 +18,8 @@ public class TraineeDao {
         storage.addEntity(trainee);
     }
 
-    public void updateTrainee(Trainee trainer) {
-        storage.updateEntity(trainer);
+    public void updateTrainee(Trainee trainer,String key) {
+        storage.updateEntity(trainer,key);
     }
 
     public void deleteTrainee(String namespace) {

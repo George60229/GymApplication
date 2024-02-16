@@ -13,6 +13,11 @@ public abstract class User implements Entity {
     private boolean isActive;
 
 
+    private Integer userId;
+
+
+
+
 
 
 }

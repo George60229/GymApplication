@@ -19,7 +19,7 @@ public class TrainerDao {
         storage.addEntity(trainer);
     }
 
-    public void updateTrainer(Trainer trainer) {
-        storage.updateEntity(trainer);
+    public void updateTrainer(Trainer trainer,String key) {
+        storage.updateEntity(trainer,key);
     }
 }

@@ -1,21 +1,22 @@
 package com.example.jymapplication.model;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @ToString
 @Setter
-@AllArgsConstructor
+@Getter
+@NoArgsConstructor
 public class Trainer extends User {
     private String specialization;
 
-    private Integer userId;
 
-    private String namespace;
+
 
     @Override
-    public String getNamespace() {
-        return namespace;
+    public String getClassName() {
+        return "trainer";
     }
 }

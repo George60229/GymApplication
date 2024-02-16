@@ -1,6 +1,5 @@
 package com.example.jymapplication.config;
 
-import com.example.jymapplication.storage.Storage;
 import com.example.jymapplication.utils.CustomBeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +12,9 @@ public class AppConfig {
 
     @Bean
     public CustomBeanPostProcessor customBeanPostProcessor() {
+
         return new CustomBeanPostProcessor();
+
     }
 }
 

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class TrainerService extends UserService {
+public class TrainerService{
 
     TrainerDao trainerDao;
 
@@ -25,9 +25,9 @@ public class TrainerService extends UserService {
         trainerDao.addTrainer(trainer);
     }
 
-    public void updateTrainer(Trainer trainer) {
+    public void updateTrainer(Trainer trainer,String key) {
         log.info("Update trainer:" + trainer.toString());
-        trainerDao.updateTrainer(trainer);
+        trainerDao.updateTrainer(trainer,key);
     }
 
     public Trainer selectTrainer(int trainerId) {
